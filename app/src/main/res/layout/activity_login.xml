@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.approsoft.tacodemo.LoginActivity"
+    android:padding="16dp"
+    android:background="@drawable/dubai">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/taco_logo"
+            android:padding="50dp"/>
+        <EditText
+            android:layout_marginTop="50dp"
+            android:id="@+id/etUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/ButtonAccent"
+            android:layout_marginBottom="8dp"
+            android:padding="8dp"
+            android:hint="@string/hint_username" />
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_password"
+            style="@style/ButtonAccent"
+            android:layout_marginBottom="10dp"
+            android:padding="8dp"
+            android:inputType="textPassword" />
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            style="@style/ButtonPrimary"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Taco Demo</string>
+    <string name="hint_username">Enter username</string>
+    <string name="hint_password">Enter password</string>
+    <string name="hint_chooser">Let us get started</string>
+    <string name="customer">Customer</string>
+    <string name="team_member">Team Member</string>
+    <string name="title_activity_main_customer">MainActivityCustomer</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
