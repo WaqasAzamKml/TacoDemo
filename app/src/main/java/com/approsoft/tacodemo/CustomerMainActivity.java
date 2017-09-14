@@ -36,6 +36,7 @@ public class CustomerMainActivity extends AppCompatActivity
         setContentView(R.layout.activity_main_customer);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        setTitle("Welcome to TACO Group");
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -50,9 +51,9 @@ public class CustomerMainActivity extends AppCompatActivity
         fragmentsTitleList = new ArrayList<>();
         fragmentList.add(new CustomerHomeFragment());
         fragmentsTitleList.add("Home");
-        fragmentList.add(new CustomerHomeFragment());
+        fragmentList.add(new CustomerAboutFragment());
         fragmentsTitleList.add("About");
-        fragmentList.add(new CustomerHomeFragment());
+        fragmentList.add(new CustomerProjectsFragment());
         fragmentsTitleList.add("Projects");
         pagerAdapter = new FragmentPagerAdapter(getSupportFragmentManager()) {
             @Override
@@ -114,20 +115,6 @@ public class CustomerMainActivity extends AppCompatActivity
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
         int id = item.getItemId();
-
-        if (id == R.id.nav_camera) {
-            // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
-
-        } else if (id == R.id.nav_slideshow) {
-
-        } else if (id == R.id.nav_manage) {
-
-        } else if (id == R.id.nav_share) {
-
-        } else if (id == R.id.nav_send) {
-
-        }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
